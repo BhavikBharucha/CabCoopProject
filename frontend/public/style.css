@@ -1,0 +1,295 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+.body {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url("./testimonials.gif");
+	background-color: rgb(30, 30, 30);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#homebtn {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	z-index: 3;
+	top: 20px;
+	left: 35px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#homebtn i {
+	color: #0073aa;
+	;
+	font-size: 25px;
+	margin-top: 15px;
+}
+
+.form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	width: 800px;
+}
+
+.form-box {
+	z-index: 999;
+	width: 100%;
+	background: #fffffff0;
+	box-shadow: 0 5px 25px rgb(0 0 0 / 15%);
+	padding: 50px;
+	border-radius: 5px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.form-box h2 {
+	font-size: 2em;
+	letter-spacing: 1.5px;
+	font-weight: 550;
+	padding: 10px;
+	text-transform: uppercase;
+	color: #424242;
+	border-bottom: 2px solid #828da0;
+}
+
+.field {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 2px solid #eee;
+	margin-bottom: 30px;
+}
+
+.field.active {
+	border-bottom: 2px solid rgb(255 64 106);
+	transition: all 0.3s ease;
+}
+
+.field input {
+	color: #828da0;
+	border: none;
+	outline: none;
+	background: none;
+	width: 100%;
+	font-size: 1em;
+	padding-bottom: 10px;
+}
+
+.field i {
+	color: #828da0;
+	font-size: 1.3em;
+	margin-right: 10px;
+	padding-bottom: 10px;
+}
+
+.field.active i {
+	color: rgb(255 64 106);
+	transition: all 0.3s ease;
+}
+
+::placeholder {
+	color: #828da0;
+	font-size: 0.85em;
+}
+
+.eye-btn {
+	cursor: pointer;
+}
+
+.eye-btn i:hover {
+	color: rgb(255 64 106);
+	transition: all 0.3s ease;
+}
+
+.forgot-link {
+	text-align: right;
+	transform: translateY(-10px);
+}
+
+.forgot-link a {
+	color: rgb(255 64 106);
+	font-size: 0.8em;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.login-option {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.login-option .text {
+	color: #828da0;
+	font-size: 0.65em;
+	margin: 25px 0;
+}
+
+.other-login {
+	display: flex;
+}
+
+.other-login a {
+	border: 1px solid #ccc;
+	padding: 11px 32px;
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	transition: all 0.3s ease;
+}
+
+.other-login a:hover {
+	border: 1px solid rgb(255 64 106);
+}
+
+.other-login a img {
+	width: 20px;
+}
+
+.imgBox img {
+	width: 310px;
+}
+
+.sliding-link {
+	display: flex;
+	font-size: 0.8em;
+	margin: 20px 0px 35px 0px;
+}
+
+.sliding-link span {
+	color: rgb(255 64 106);
+	font-weight: 600;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.imgBox {
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #fff;
+	box-shadow: 0 5px 25px rgb(0 0 0 / 15%);
+	height: 400px;
+	padding: 15px 35px;
+}
+
+.sign-in-imgbox {
+	border-radius: 0 5px 5px 0;
+}
+
+.sign-up-imgbox {
+	border-radius: 5px 0 0 5px;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(255 64 106);
+}
+
+.submit-btn {
+	position: relative;
+	background-color: rgb(255 64 106);
+	border-radius: 5px;
+	box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	width: 154px;
+	height: 39px;
+	color: #fff;
+	border: none;
+	font-size: 15px;
+	transition: all .3s ease-in-out;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.box1 {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.box2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+@media screen and (max-width: 770px) {
+	.form-box {
+		width: 60%;
+		margin: 20px 0px;
+	}
+
+	.box1 {
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.body {
+		display: block;
+	}
+
+	.form-container {
+		position: relative;
+		width: 100%;
+	}
+
+	.submit-btn {
+		width: 124px;
+		height: 35px;
+		font-size: 13px;
+	}
+
+	.field input {
+		width: 100%;
+		font-size: 0.9em;
+	}
+
+	.field i {
+		font-size: 1em;
+		margin-right: 7px;
+	}
+
+	.form-box h2 {
+		font-size: 1.4em;
+		letter-spacing: 1.3px;
+		padding: 8px;
+	}
+
+	.sliding-link {
+		display: flex;
+		font-size: 0.6em;
+		margin: 20px 0px 35px 0px;
+	}
+}

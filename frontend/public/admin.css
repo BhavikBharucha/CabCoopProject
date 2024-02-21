@@ -1,0 +1,168 @@
+.admain {
+    margin-left: 140px;
+    font-size: 200%;
+    padding: 0 3%;
+}
+
+
+.adsidebar {
+    height: 100%;
+    width: 180px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: darkslategrey;
+    padding-top: 20px;
+}
+
+.adsidebar a {
+    display: block;
+    margin-top: 2%;
+    padding: 2% 4%;
+    text-decoration: none;
+    color: lightblue;
+    font-size: 1.2em;
+}
+
+.adsidebar a:hover {
+    color: mistyrose;
+    font-size: 1.4em;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6)
+}
+
+.images {
+    height: auto;
+    width: 140px;
+}
+
+.inputbox {
+    width: 50%;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 1.5%;
+    padding: 5px;
+    border-radius: .5rem;
+    background: #ffffff;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    text-transform: none;
+}
+
+.btnsn {
+    margin-top: 20px;
+    padding: 15px;
+    width: 150px;
+    background-color: skyblue;
+    border: none;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.navv {
+    display: flex;
+    justify-content: space-between;
+    background: #cfd8dc;
+    padding: 1rem 2rem;
+    height: 50px;
+    width: 100%;
+}
+
+.navv a {
+    text-decoration: none;
+    color: #0d47a1;
+    font-size: large;
+}
+
+.navv ul {
+    display: flex;
+    list-style: none;
+    margin-top: -20px;
+}
+
+.navv li {
+    padding-left: 1rem;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+.cards {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    width: 250px;
+    height: 180px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin: 5%;
+  }
+
+ .cards:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,1) ;
+ }
+  
+
+@media only screen and (max-width: 600px) {
+    .navv {
+        flex-direction: column;
+    }
+
+    .navv ul {
+        flex-direction: column;
+
+    }
+
+    .navv li {
+        padding: 0.5rem 0;
+    }
+}
+
+/* .dropbtn {
+    background-color: darkslategrey;
+    color: lightblue;
+    border: none;
+    cursor: pointer;
+    width: 180px;
+    text-decoration: none;
+    font-size: 1.2em;
+    height: 20px;
+    display: block;
+    text-align: left;
+    padding-left: 4% ;
+}
+
+.dropdownn {
+    border: none;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+
+.dropdownn-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.dropdownn:hover .dropdownn-content {
+    display: block;
+} */
