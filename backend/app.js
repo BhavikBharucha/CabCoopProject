@@ -18,7 +18,7 @@ const CountryRoute = require('./Routes/country.route');
 const StateRoute = require('./Routes/state.route');
 const CityRoute = require('./Routes/city.route');
 const CarDetailsRoute = require('./Routes/cardetails.route');
-// const CustomerRoute = require('./Routes/customer.route');
+const CustomerRoute = require('./Routes/customer.route');
 const CustomerAgentCabBookingRoute = require('./Routes/customeragentcabbooking.route');
 const CustomerCabBookingRoute = require('./Routes/customercabbooking.route');
 const RouteCategory = require('./Routes/routecategory.route');
@@ -33,7 +33,7 @@ app.use('/country',CountryRoute);
 app.use('/state',StateRoute);
 app.use('/city',CityRoute);
 app.use('/car',CarDetailsRoute);
-// app.use('/customer',CustomerRoute);
+app.use('/customer',CustomerRoute);
 app.use('/cagentcab',CustomerAgentCabBookingRoute); //cagent indicate customeragent
 app.use('/ccab',CustomerCabBookingRoute); //ccab indicate customer cab booking
 app.use('/cabroute',RouteCategory);
